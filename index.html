@@ -20,12 +20,8 @@
         >
             <a-assets>
                 <a-asset-item
-                    id="animated-asset-obj"
-                    src="assets/Kuckucksuhr4_downsample_jpg8192.obj"
-                ></a-asset-item>
-                <a-asset-item
-                    id="animated-asset-mtl"
-                    src="assets/Kuckucksuhr4_downsample_jpg8192.mtl"
+                    id="animated-asset"
+                    src="assets/asset.gltf"
                 ></a-asset-item>
             </a-assets>
 
@@ -41,9 +37,9 @@
             >
                 <a-entity
                     id="bowser-model"
-                    scale="1.3999999964984307 1.3999999964984307 1.3999999964984307"
+                    scale="0.02214329484539914 0.02214329484539914 0.02214329484539914"
                     animation-mixer="loop: repeat"
-                    obj-model="obj: #animated-asset-obj; mtl: #animated-asset-mtl"
+                    gltf-model="#animated-asset"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
